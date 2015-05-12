@@ -5,4 +5,4 @@
 ##### Mmap is used for aligned buffers.
 
 ### TODO
-- [] get rid of hard-coded 512 alignment
+[] get rid of hard-coded 512 alignment
