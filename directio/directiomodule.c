@@ -149,7 +149,7 @@ method_write (PyObject * self, PyObject * args)
 
 static PyMethodDef SpliceTeeMethods[] = {
   {"read", method_read, METH_VARARGS,
-   "read(fd, cout) = string\n"
+   "read(fd, count) = string\n"
    "\n"
    "read() attempts to read up to count bytes from file descriptor fd into a \
 buffer.\n" "\n" "Upon success, 'read' returns a buffer containing the bytes read.\n"},
