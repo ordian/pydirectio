@@ -168,7 +168,7 @@ MOD_INIT(directio)
 
   MOD_DEF (m,
            "directio",  
-           "Direct interface to 'open', 'read', 'write' and 'close' system calls on a direct I/O context.",
+           "Direct interface 'read' and 'write' system calls on a direct I/O context.",
            SpliceTeeMethods
           );
   if (!m)
