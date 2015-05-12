@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: directio
+Version: 1.2
+Summary: A Python interface to open/read/write on a direct I/O context.
+Author: Jérôme Petazzoni
+Author-email: dev.python.directio@enix.fr
+License: http://www.gnu.org/licenses/gpl.txt
+Description: 
+        This is an interface to read() and write() on a direct I/O context (O_DIRECT flag) from the Python programming language.
+        
+        These system calls are Linux system calls to read or write from the file ignores the buffer cache.
+        
+        The O_DIRECT flag introduced in SGI IRIX, where it has alignment restrictions similar to those of Linux 2.4. 
+        FreeBSD 4.x introduced a flag of the same name, but without alignment restrictions. 
+        Support was added under Linux in kernel version 2.4.10. Older Linux kernels simply ignore this flag.
+        
+Platform: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: POSIX :: Linux
