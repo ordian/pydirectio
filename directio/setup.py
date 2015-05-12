@@ -29,7 +29,7 @@ module1 = Extension('directio',
                     sources = ['directiomodule.c'])
 
 setup (name = 'directio',
-       version = '1.0',
+       version = '1.2',
        author = u'Omar Ait Mous, Jérôme Petazzoni, Andronik Ordian',
        author_email = 'dev.python.directio@enix.fr',
        maintainer = u'Andronik Ordian',
