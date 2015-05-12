@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding=utf-8
+
 import os
 import unittest
 
@@ -25,7 +28,7 @@ class TestDirectio(unittest.TestCase):
         os.close(self.file)
 
     def test_read_after_write(self):
-        # can write only immutable buffer, so we buffer wrap in bytes
+        # can write only immutable buffer, so we wrap buffer in bytes
         written = directio.write(self.file, bytes(self.buffer))
         self.assertEqual(written, len(self.buffer))
         os.lseek(self.file, 0, os.SEEK_SET)
