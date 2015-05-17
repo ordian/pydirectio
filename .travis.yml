@@ -12,6 +12,6 @@ python:
   - "nightly"
 install:
   - cd directio-1.2
-  - pip install directio
+  - python setup.py install
 script:
   - python test_directio.py
