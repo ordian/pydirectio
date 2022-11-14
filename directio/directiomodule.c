@@ -17,6 +17,7 @@
    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
    .- */
 
+#define PY_SSIZE_T_CLEAN
 #include <Python.h>
 
 #include <sys/types.h>
@@ -111,7 +112,7 @@ method_write (PyObject * self, PyObject * args)
 {
   int fd;
   void *buff = NULL, *alignedbuff = NULL;
-  int count = 0;
+  Py_ssize_t count = 0;
   ssize_t ret = 0;
 
   if (!PyArg_ParseTuple (args, "is#", &fd, &buff, &count))
