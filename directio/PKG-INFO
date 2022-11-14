@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: directio
-Version: 1.2
+Version: 1.3
 Summary: A Python interface to open/read/write on a direct I/O context.
 Author: Jérôme Petazzoni
 Author-email: dev.python.directio@enix.fr
