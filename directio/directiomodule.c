@@ -48,14 +48,14 @@
 
 static size_t alignment = 512;
 
-inline void * 
+static void * 
 aligned_allocate (size_t size)
 {
   return mmap(NULL, size, PROT_READ | PROT_WRITE, 
               MAP_ANONYMOUS | MAP_PRIVATE, -1, 0);
 }
 
-inline void 
+static void 
 aligned_free (void *addr, size_t size)
 {
   munmap(addr, size);
@@ -175,7 +175,7 @@ MOD_INIT(directio)
   if (!m)
     return MOD_ERROR_VAL;
 
-  PyModule_AddStringConstant (m, "__version__", "1.2");
+  PyModule_AddStringConstant (m, "__version__", "1.4");
   
   return MOD_SUCCESS_VAL(m);
 }
